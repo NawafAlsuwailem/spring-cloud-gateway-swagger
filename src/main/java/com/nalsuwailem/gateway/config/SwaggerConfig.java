@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Configuration
-@Primary // register custom configuration first
+@Primary // register custom configuration first to avoid registration conflict with inMemorySwaggerResourcesProvider
 public class SwaggerConfig implements SwaggerResourcesProvider {
 
     public static final String API_URI = "/v3/api-docs"; // OpenApi description default URI
